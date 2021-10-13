@@ -12,7 +12,7 @@ export class ToolExplore {
   @State() database: Array<object> = [];
   
   componentWillLoad() {
-    fetch("assets/index.json").then((response) => {
+    fetch("<$ CONTENT_URL $>/index.json").then((response) => {
       response.json().then((data) => {
         this.database = data;
         this.doSelectRandomly();
@@ -33,8 +33,8 @@ export class ToolExplore {
 
   renderMaterial() {
     if (this.material != null) {
-      const url_jxl = "https://texture.design/tools/cache/" + this.material['uuid'] + ".jxl";
-      const url_webp = "https://texture.design/tools/cache/" + this.material['uuid'] + ".webp";
+      const url_jxl = "<$ CONTENT_URL $>/" + this.material['uuid'] + ".jxl";
+      const url_webp = "<$ CONTENT_URL $>/" + this.material['uuid'] + ".webp";
       return (
         <picture class="preview">
           <source srcSet={url_jxl} type="image/jxl" />
