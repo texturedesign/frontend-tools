@@ -1,0 +1,12 @@
+dist/
+www/
+
+*.lock
+*.d.ts
+
+.stencil/
+.vscode/
+node_modules/
+
+.DS_Store
+Thumbs.db
