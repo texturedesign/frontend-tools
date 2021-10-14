@@ -1,0 +1,13 @@
+{
+  "name": "texture·design",
+  "short_name": "td",
+  "start_url": "/tools/",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/icon/icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#202020",
+  "theme_color": "#202020"
+}
